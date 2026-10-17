@@ -6,17 +6,17 @@ terraform {
     }
   }
 
-  required_version = ">= 1.14.2"
+  required_version = ">= 1.12.2"
 }
 
 provider "aws" {
-  region = "us-east-2"
+  region = "ap-southeast-4"
 }
 
 resource "aws_instance" "lab_03" {  
   # This is a Debian 13 instance. 
-  ami           = "ami-050352a65e954abb1"
-  instance_type = "t2.micro"
+  ami           = "ami-00f6631818ded332f"
+  instance_type = "t4g.micro"
 
   tags = {
     Name = "Lab-03"
