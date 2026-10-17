@@ -16,7 +16,7 @@ provider "aws" {
 resource "aws_instance" "lab_03" {
   # This is a Debian 13 instance. 
   ami           = "ami-00f6631818ded332f"
-  instance_type = "t4g.micro"
+  instance_type = "t3.micro"
 
   tags = {
     Name = "Lab-03"
