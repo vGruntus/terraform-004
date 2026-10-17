@@ -3,4 +3,3 @@
 z-backup/
 .VSCodeCounter/*
 **/.terraform/
-**/.terraform.lock.hcl
